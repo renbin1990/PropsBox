@@ -1,2 +1,4 @@
 rootProject.name = "PropsBox"
 include ':app'
+include ':sunnyWeather'
+include ':baselibrary'

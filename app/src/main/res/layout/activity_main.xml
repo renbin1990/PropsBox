@@ -6,10 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/sunnyWeather"
-        android:text="SunnyWeather"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:id="@+id/ll_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/sunnyWeather"
+            android:src="@mipmap/weather_icon"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp"/>
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
 
 </FrameLayout>

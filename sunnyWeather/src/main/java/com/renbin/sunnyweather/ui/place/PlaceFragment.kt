@@ -1,5 +1,6 @@
 package com.renbin.sunnyweather.ui.place
 
+import android.content.Intent
 import android.opengl.Visibility
 import android.os.Bundle
 import android.view.View
@@ -11,7 +12,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.renbin.baselibrary.BaseFragment
 import com.renbin.baselibrary.utils.showToast
+import com.renbin.sunnyweather.MainSunnyWeatherActivity
 import com.renbin.sunnyweather.R
+import com.renbin.sunnyweather.ui.weather.WeatherActivity
 import kotlinx.android.synthetic.main.fragment_place.*
 
 /**
@@ -26,6 +29,18 @@ class PlaceFragment : BaseFragment() {
     override fun getContentViewLayoutId(): Int = R.layout.fragment_place
 
     override fun initView(savedInstanceState: Bundle?) {
+        if (activity is MainSunnyWeatherActivity && viewModel.isPlaceSaved()){
+            val place = viewModel.getSavedPlace()
+            val intent = Intent(context, WeatherActivity::class.java).apply {
+                putExtra("location_lng", place.location.lng)
+                putExtra("location_lat", place.location.lat)
+                putExtra("place_name", place.name)
+            }
+            startActivity(intent)
+            activity?.finish()
+            return
+        }
+
         val linearLayoutManager = LinearLayoutManager(activity)
         recyclerView.layoutManager = linearLayoutManager
         adapter = PlaceAdapter(this, viewModel.placeList)

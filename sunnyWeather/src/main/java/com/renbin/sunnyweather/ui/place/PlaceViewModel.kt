@@ -12,7 +12,6 @@ import retrofit2.http.Query
  *Author:renbin
  */
 class PlaceViewModel :ViewModel() {
-
     private val searchLiveData = MutableLiveData<String>()
 
     val placeList = ArrayList<Place>()
@@ -24,4 +23,9 @@ class PlaceViewModel :ViewModel() {
     fun searchPlaces(query: String){
         searchLiveData.value = query
     }
+
+
+    fun savePlace(place: Place) = Repository.savePlace(place)
+    fun getSavedPlace() = Repository.getSavedPlace()
+    fun isPlaceSaved() = Repository.isPlaceSaved()
 }

@@ -24,6 +24,10 @@ class MainActivity : BaseActivity() {
         findViewById<ImageView>(R.id.sunnyWeather).setOnClickListener {
             startActivity(Intent(this@MainActivity, MainSunnyWeatherActivity::class.java))
         }
+
+        findViewById<ImageView>(R.id.myLove).setOnClickListener {
+            startActivity(Intent(this@MainActivity, MyLoveMainActivity::class.java))
+        }
     }
 
     override fun initData() {

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:background="@drawable/main_bg"
+    tools:context=".MyLoveMainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:textSize="14sp"
+            android:textColor="@android:color/holo_blue_bright"
+            android:text="相识："/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:text="2018年6月30日"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:textSize="14sp"
+            android:textColor="@android:color/holo_blue_bright"
+            android:text="相识天数："/>
+
+        <TextView
+            android:id="@+id/tv_xs_day"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:text=""/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:textSize="14sp"
+            android:textColor="@android:color/holo_blue_bright"
+            android:text="牵手："/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:text="2020年10月30日"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:textSize="14sp"
+            android:textColor="@android:color/holo_blue_bright"
+            android:text="相爱："/>
+
+        <TextView
+            android:id="@+id/tv_totle_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:text=""/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:textSize="14sp"
+            android:textColor="@android:color/holo_blue_bright"
+            android:text="当前时间："/>
+
+        <TextView
+            android:id="@+id/tv_now_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:text=""/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -23,6 +23,8 @@
             android:screenOrientation="portrait"></activity>
         <activity android:name="com.renbin.sunnyweather.ui.weather.WeatherActivity"
             android:screenOrientation="portrait"/>
+        <activity android:name=".MyLoveMainActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
